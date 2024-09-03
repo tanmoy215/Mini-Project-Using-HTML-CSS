@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Eczar", serif;
+}
+.main_box{
+    background-image: url("/image.png");
+    height: 100vh;
+    background-size: cover;
+}
+.btn_one i{
+    color: white;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 60px;
+     position: absolute;
+     left: 40px;
+     top: 20px;
+     cursor: pointer;
+     transition: all 0.3s linear;
+}
+
+.sidebar_menu{
+    height: 100vh;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 6px rgba(255,255,255,0.5);
+    position: absolute;
+    left: -2000px;
+    transition: all 0.4s linear;
+}
+.sidebar_menu .logo{
+    position: absolute;
+    width: 300px;
+    line-height: 60px;
+    box-shadow: 0 0 6px rgba(255,255,255,0.5);
+    height: 80px;
+    box-shadow: 0 3px 6px rgba(255,255,255,0.5);
+}
+.sidebar_menu .logo a{
+    position: absolute;
+    left: 38px;
+    color: white;
+    font-size: 28px;
+    letter-spacing: 6px;
+    text-decoration: none;
+    
+}
+.sidebar_menu .btn_two i{
+    font-size: 20px;
+    font-weight: 700;
+    position: absolute;
+    left: 280px;
+    cursor: pointer;
+}
+.sidebar_menu .menu{
+     position: absolute;
+     top: 100px;
+     width: 100%;
+}
+.sidebar_menu .menu li{
+    margin-top: 6px;
+    padding: 13px 18px;
+}
+.sidebar_menu .menu li,a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.sidebar_menu .menu i{
+    padding-right: 8px;
+}
+.sidebar_menu .social_media{
+    position: absolute;
+     left: 80px;
+      top: 600px;
+     
+}
+.sidebar_menu .social_media i{
+    opacity: 0.4;
+    color: white;
+    padding-right: 13px;
+}
+#check{
+    display: none;
+}
+.sidebar_menu .menu li:hover{
+    width: 265px;
+    box-shadow: 0 0 6px rgba(255,255,255,0.5);
+}
+.btn_one i:hover{
+    font-size: 50px;
+}
+.btn_two i:hover{
+    font-size: 20px;
+}
+.sidebar_menu .social_media i:hover{
+    opacity: 1;
+    transform: scale(1.2);
+}
+#check:checked ~.sidebar_menu{
+    left: 0;
+}
+#check:checked ~.btn_one i{
+    opacity: 0;
+}
